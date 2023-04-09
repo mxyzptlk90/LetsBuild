@@ -22,7 +22,7 @@
                 }
                 catch {
                     // Task specifies that program can write into output only result or -1 if problem has no solution. 
-                    // Assume that every exception means no solution
+                    // Assume that an exception means no solution
                     Console.Out.WriteLine(-1);
                 }
             }

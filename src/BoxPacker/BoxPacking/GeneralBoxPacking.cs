@@ -38,7 +38,6 @@ public static partial class BoxPacking
                 combineCubes(i + 1, volume - (int)Math.Pow(cubeEdge, 3), combination);
                 combination.RemoveAt(combination.Count - 1);
 
-
                 previous = cubeEdge;
 
                 if (possibleCombinations.Any(c => c.Count == indexedCubes.Count)) {

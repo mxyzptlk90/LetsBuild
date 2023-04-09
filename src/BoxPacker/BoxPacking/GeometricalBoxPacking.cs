@@ -30,7 +30,7 @@
             for (int i = 0; i < possibleStartPoints.Count; i++) {
                 var position = possibleStartPoints[i];
                 if (IsValidPosition(box, cube, position.x, position.y, position.z)) {
-                    // If cube fits when placed at this position, we update 2d model and remove 
+                    // If cube fits when placed at this position, we update 3d model and remove 
                     // position from the list
                     UpdateUsedSpace(boxSpaceOccupied, cube, position.x, position.y, position.z);
                     possibleStartPoints.RemoveAt(i);
