@@ -2,7 +2,7 @@
 
 public static partial class BoxPacking
 {
-    public static IEnumerable<IEnumerable<int>> GetCubesThatCanFillBoxRecursivly((int h, int w, int l) box, IndexedStack<int> indexedCubes) {
+    public static IEnumerable<IEnumerable<int>> GetCubesThatCanFillBoxRecursively((int h, int w, int l) box, IndexedStack<int> indexedCubes) {
         int boxVolume = box.l * box.h * box.w;
         int maxFit = Math.Min(box.l, Math.Min(box.h, box.w));
 

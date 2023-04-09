@@ -74,7 +74,7 @@
             var result = -1;
             var cubesCount = cubes.Count;
 
-            Func<(int, int, int), IndexedStack<int>, IEnumerable<IEnumerable<int>>> getCubesThatCanFit = useRecursion ? BoxPacking.GetCubesThatCanFillBoxRecursivly
+            Func<(int, int, int), IndexedStack<int>, IEnumerable<IEnumerable<int>>> getCubesThatCanFit = useRecursion ? BoxPacking.GetCubesThatCanFillBoxRecursively
                                                                                                                : BoxPacking.GetCubesThatCanFillBoxIteratively;
 
             ThreadStart action = () => {
